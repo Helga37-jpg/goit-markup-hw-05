@@ -788,7 +788,7 @@ p {
     padding: 72px 24px 24px 24px;
 }
 
-.modal-close {
+.modal .modal-close {
     display: flex;
     position: absolute;
     top: 24px;
@@ -796,7 +796,7 @@ p {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-color: #e7e9fc;
+    background-color: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     cursor: pointer;
@@ -806,12 +806,12 @@ p {
     justify-content: center;
 }
 
-.modal-close:hover {
+.modal .modal-close:hover {
     background-color: #404bbf;
     border: none;
 }
 
-.modal-close:focus {
+.modal .modal-close:focus {
     background-color: #404bbf;
     border: none;
 }
