@@ -427,50 +427,60 @@
     <div class="backdrop">
         <div class="modal">
             <button type="button" class="modal-close">x</button>
-            <p class="form-title">Leave your contacts and we will call you back</p>
-            
-            <form class="contact-form">
-                <div class="form-field">
-                    <label for="user-name" class="form-label">Name</label>
+            <p class="modal-text">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+                <!-- Перший дочірній елемент форми — div -->
+                <div class="input-group">
+                    <label for="user-name" class="label-group">Name</label>
                     <div class="input-wrapper">
-                        <input type="text" id="user-name" name="user-name" class="form-input" required minlength="3">
+                        <input type="text" id="user-name" name="user-name" class="input-field">
+                        <svg class="input-icon" width="18" height="24">
+                            <use href="./images/icons.svg"></use>
+                        </svg>
                     </div>
-                </div>
-    
-                <div class="form-field">
-                    <label for="user-phone" class="form-label">Phone</label>
-                    <div class="input-wrapper">
-                        <input type="tel" id="user-phone" name="user-phone" class="form-input" required minlength="10">
-                    </div>
-                </div>
-    
-    
-                <div class="form-field">
-                    <label for="user-comment" class="form-label">Comment</label> <!-- 1-й дочерний -->
-                    <textarea id="user-comment" name="user-comment" placeholder="Text input" class="form-textarea"></textarea>
-                    <!-- 2-й дочерний -->
-                </div>
-
-
-    
-                <div class="form-checkbox-wrapper" style="margin-bottom: 24px;">
-                    <input class="checkbox-input visually-hidden" id="user-privacy" type="checkbox" name="user-privacy" value="true" />
-                    <label for="user-privacy" class="checkbox-label">
-                        <span class="checkbox-custom">
-                            <svg class="checkbox-icon" width="10" height="8">
-                                <use href="./images/icons.svg#icon-check"></use>
+                    <div class="input-group">
+                        <label for="user-name" class="label-group">Phone</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="user-name" name="user-name" class="input-field">
+                            <svg class="input-icon" width="18" height="24">
+                                <use href="./images/icons.svg"></use>
                             </svg>
-                        </span>
-                        I accept the terms and conditions of the
-                        <a href="#" class="checkbox-link">Privacy Policy</a>
-                    </label>
-
-                </div> 
-            </form>
-        <button type="submit" class="submit-button">Send</button>
+                        </div>
+                    <div class="input-group">
+                        <label for="user-name" class="label-group">Email</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="user-name" name="user-name" class="input-field">
+                            <svg class="input-icon" width="18" height="24">
+                                <use href="./images/icons.svg"></use>
+                            </svg>
+                    </div>
+                    
+                    </div>
+                    <div class="form-comment">
+                            <label for="user-comment" class="form-label">Comment</label>
+                            <textarea id="user-comment" name="user-comment" placeholder="Text input" class="form-textarea"></textarea>
+                    </div>
+                    <div class="form-agreement">
+                            <input class="visually-hidden custom-checkbox" id="user-privacy" type="checkbox" name="user-privacy" value="true" />
+                            <label for="user-privacy" class="checkbox-label">
+                                <span class="custom-icon">
+                                    <svg class="icon-check" width="10" height="8">
+                                        <use href="./images/icons.svg#icon-check"></use>
+                                    </svg>
+                                </span>
+                                I accept the terms and conditions of the
+                                <a href="#" class="privacy-link">Privacy Policy</a>
+                            </label>
+                    
+                    </div>
+                <button type="submit" class="form-submit">
+                    Send
+                </button>
+                </form>
+                </div>
         </div>
+           
     </div>
-
     <!-- футер конец -->
 </body>
 
