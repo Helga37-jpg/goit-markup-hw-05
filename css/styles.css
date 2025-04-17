@@ -972,7 +972,6 @@ input[type="checkbox"]:checked+.checkbox-label .custom-icon {
 }
 
 .icon-check {
-    display: none;
     fill: white;
 }
 
