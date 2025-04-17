@@ -733,6 +733,8 @@ p {
 
 /* Кнопка */
 .subscribe-button {
+    display: inline-flex;
+    gap: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -836,9 +838,7 @@ p {
     display: block;
     margin-bottom: 4px;
 }
-.form-label{
 
-}
 .input-wrapper{
     position: relative;
     font-size: 12px;
@@ -864,6 +864,7 @@ p {
 .input-field:focus{
     border-color: #4D5AE5;
 }
+
 .input-icon{
     position: absolute;
     left: 16px;
@@ -888,6 +889,7 @@ p {
     padding: 8px 16px;
     outline: transparent;
     resize: none;
+    position: relative;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-textarea:focus{
