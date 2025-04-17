@@ -735,6 +735,7 @@ p {
 .subscribe-button {
     display: inline-flex;
     gap: 8px;
+    min-width: 165px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -925,6 +926,9 @@ input[type="checkbox"]:checked+.checkbox-label .custom-icon {
 }
 .privacy-link {
     color: var(--link-color);
+}
+.frame-input{
+    margin-left: 16px;
 }
 .form-submit{
     display: block;
