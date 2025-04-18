@@ -824,6 +824,7 @@ p {
     border: none;
     fill: #ffffff;
 }
+
 .modal-text {
     font-size: 16px;
     font-weight: 500;
@@ -868,10 +869,14 @@ p {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.input-field:focus{
+.input-field:focus {
     border-color: #4D5AE5;
 }
 
+/* Зміна кольору іконки при фокусі на input */
+.input-field:focus+.input-icon use {
+    fill: #4D5AE5;
+}
 .input-icon{
     position: absolute;
     left: 16px;
@@ -909,10 +914,9 @@ p {
 
 .chekbox-label{
     font-size: 12px;
-    
+    color: var(--text-color);
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: var(--color-light-grey);
 }
 .checkbox-group{
     margin-bottom: 24px;
@@ -953,6 +957,8 @@ input[type="checkbox"]:checked+.checkbox-label .custom-icon {
     --checkbox-checked-bg: #4D5AE5;
     --text-muted: rgba(46, 47, 66, 0.4);
     --link-color: #4D5AE5;
+    --main-text-color: #2E2F42;
+    --text-color: #8e8f99;
 }
 
 .form-agreement {
