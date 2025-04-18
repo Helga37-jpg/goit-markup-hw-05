@@ -999,6 +999,9 @@ input[type="checkbox"]:checked+.checkbox-label {
 .icon-check {
     fill: white;
 }
+.custom-checkbox{
+    margin-bottom: 24px;
+}
 
 .custom-checkbox:checked+.checkbox-label .custom-icon {
     background-color: var(--checkbox-checked-bg);
