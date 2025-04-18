@@ -835,7 +835,7 @@ p {
     color: var(--main-text-color);
 }
 .input-group{
-    margin-bottom: 8px;
+    margin-bottom: 24px;
 }
 .label-group{
     font-size: 12px;
@@ -845,6 +845,7 @@ p {
     color: var(--label-color);
     display: block;
     margin-bottom: 4px;
+
 }
 
 .input-wrapper{
