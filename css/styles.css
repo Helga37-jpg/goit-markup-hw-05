@@ -1008,6 +1008,7 @@ input[type="checkbox"]:checked+.checkbox-label {
 }
 
 .custom-checkbox:checked+.checkbox-label .custom-icon {
+    display: inline-flex;
     background-color: var(--checkbox-checked-bg);
     border:none;
 }
