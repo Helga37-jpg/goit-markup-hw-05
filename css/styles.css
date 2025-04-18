@@ -969,7 +969,6 @@ p {
 }
 
 .checkbox-label {
-    display: flex;
     align-items: center;
     font-size: 12px;
     line-height: 1.17;
@@ -1013,10 +1012,12 @@ input[type="checkbox"]:checked+.checkbox-label {
     border:none;
 }
 
+
 .custom-checkbox:checked+.checkbox-label .icon-check {
+    display: block;
+    /* ← додаємо! */
     fill: var(--checkbox-icon-checked);
 }
-
 .privacy-link {
     color: var(--link-color);
     text-decoration: underline;
