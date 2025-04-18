@@ -758,7 +758,7 @@ p {
     background-color: #31d0aa;
 }
 
-/*модальное*/
+
 /*модальное*/
 .backdrop {
     display: flex;
@@ -872,7 +872,7 @@ p {
 .input-field:focus {
     border-color: #4D5AE5;
 }
-.input-field:focus+.input-icon{
+.input-field:focus~.input-icon {
     fill: #4D5AE5;
 }
 
@@ -911,12 +911,7 @@ p {
 }
 
 
-.chekbox-label{
-    font-size: 12px;
-    color: var(--text-color);
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-}
+
 .checkbox-group{
     margin-bottom: 24px;
 }
@@ -979,6 +974,15 @@ p {
     user-select: none;
 }
 
+input[type="checkbox"]:checked+.checkbox-label {
+    color: var(--link-color);
+}
+
+
+.checkbox-label:hover {
+    color: var(--link-color);
+}
+
 .custom-icon {
     display: inline-flex;
     justify-content: center;
@@ -989,7 +993,6 @@ p {
     border-radius: 2px;
     margin-right: 8px;
     background-color: #fff;
-    fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
