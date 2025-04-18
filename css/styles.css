@@ -916,7 +916,9 @@ p {
     margin-bottom: 24px;
 }
 
-
+.input-field:focus{
+    border-color: #4D5AE5;
+}
 
 /* Зміна кольору іконки при фокусі на input */
 /* Изменение цвета иконки при фокусе на input */
@@ -954,7 +956,7 @@ p {
     --text-muted: rgba(46, 47, 66, 0.4);
     --link-color: #4D5AE5;
     --main-text-color: #2E2F42;
-    --text-color: #8e8f99;
+
 }
 
 .form-agreement {
@@ -991,7 +993,6 @@ p {
     border-radius: 2px;
     margin-right: 8px;
     background-color: #fff;
-    display: inline-flex;
     fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
