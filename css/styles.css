@@ -951,7 +951,6 @@ p {
     --text-color-light: #8e8f99;
     --checkbox-bg: #404BBF;
     --checkbox-fill: #F4F4FD;
-
 }
 
 .form-agreement {
@@ -977,13 +976,15 @@ p {
     user-select: none;
 }
 
+input[type="checkbox"]:checked+.checkbox-label {
+    color: var(--link-color);
+}
 
-.input-class:checked+.label-class>.span-class {
+input[type="checkbox"]:checked+.checkbox-label>.custom-icon {
     background-color: var(--checkbox-bg);
     border: none;
     fill: var(--checkbox-fill);
 }
-
 .checkbox-label:hover {
     color: var(--link-color);
 }
