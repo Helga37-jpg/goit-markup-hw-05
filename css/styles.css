@@ -949,8 +949,8 @@ p {
     --link-color: #4D5AE5;
     --main-text-color: #2E2F42;
     --text-color-light: #8e8f99;
-    --checked-background: #404bbf;
-    --checkbox-icon-checked: #F4F4FD;
+    --checkbox-bg: #404BBF;
+    --checkbox-fill: #F4F4FD;
 
 }
 
@@ -977,10 +977,12 @@ p {
     user-select: none;
 }
 
-input[type="checkbox"]:checked+.checkbox-label {
-    color: var(--link-color);
-}
 
+.input-class:checked+.label-class>.span-class {
+    background-color: var(--checkbox-bg);
+    border: none;
+    fill: var(--checkbox-fill);
+}
 
 .checkbox-label:hover {
     color: var(--link-color);
@@ -1006,18 +1008,6 @@ input[type="checkbox"]:checked+.checkbox-label {
 .custom-checkbox{
     margin-bottom: 24px;
 }
-
-.custom-checkbox:checked+.checkbox-label .custom-icon {
-    display: inline-flex;
-    background-color: var(--checkbox-checked-bg);
-    border:none;
-}
-
-
-.custom-checkbox:checked+.checkbox-label .icon-check {
-    display: block;
-    /* ← додаємо! */
-    fill: var(--checkbox-icon-checked);
 }
 .privacy-link {
     color: var(--link-color);
